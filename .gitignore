@@ -1,0 +1,11 @@
+.DS_Store
+__MACOSX/
+
+.artifacts/
+.savedWithData
+
+**/internal/
+**/filestore/
+**/port_*/data.zip
+**/port_*/data.xml
+**/port_*/spec.xml
