@@ -13,7 +13,7 @@
             </config>
             <config key="1">
                 <entry key="oldName" type="xstring" value="Column1"/>
-                <entry key="newName" type="xstring" value="label"/>
+                <entry key="newName" type="xstring" value="sentiment"/>
             </config>
         </config>
         <entry key="doNotAllowPaddedColumnName_Internals" type="xboolean" value="true"/>
@@ -61,6 +61,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="ee81e092-4cc0-45fb-8e73-97d12c012063"/>
+        <entry key="file_store_id" type="xstring" value="e7b0c8d2-c6e5-40c0-a5e1-22e8f7f9b520"/>
     </config>
 </config>

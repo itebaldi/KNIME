@@ -6,37 +6,31 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="DocumentColumn" type="xstring" value="Preprocessed Document"/>
-        <entry key="TermColumn" type="xstring" value="Term"/>
-        <config key="ColumnFilter">
-            <entry key="filter-type" type="xstring" value="STANDARD"/>
-            <config key="included_names">
-                <entry key="array-size" type="xint" value="2"/>
-                <entry key="0" type="xstring" value="label"/>
-                <entry key="1" type="xstring" value="Preprocessed Document"/>
-            </config>
-            <config key="excluded_names">
-                <entry key="array-size" type="xint" value="2"/>
-                <entry key="0" type="xstring" value="Sentence"/>
-                <entry key="1" type="xstring" value="Document"/>
-            </config>
-            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value=""/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-            </config>
-            <config key="datatype">
-                <config key="typelist"/>
-            </config>
+        <config key="Document Column_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
+        <entry key="Document Column" type="xstring" value="Document"/>
+        <config key="Preprocess Unmodifiable_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="Preprocess Unmodifiable" type="xboolean" value="false"/>
+        <config key="Replace Document_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="Replace Document" type="xboolean" value="false"/>
+        <config key="New Document Column Name_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="New Document Column Name" type="xstring" value="Preprocessed Document"/>
     </config>
-    <config key="variables"/>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
-    <entry key="factory" type="xstring" value="org.knime.ext.textprocessing.nodes.transformation.bow.BagOfWordsNodeFactory2"/>
-    <entry key="node-name" type="xstring" value="Bag Of Words Creator"/>
+    <entry key="factory" type="xstring" value="org.knime.ext.textprocessing.nodes.preprocessing.puncterasure.PunctuationErasureNodeFactory2"/>
+    <entry key="node-name" type="xstring" value="Punctuation Erasure"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Textprocessing Plug-in"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.ext.textprocessing"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
@@ -46,7 +40,7 @@
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
     <entry key="node-feature-version" type="xstring" value="5.10.0.v202511281046"/>
     <config key="factory_settings"/>
-    <entry key="name" type="xstring" value="Bag Of Words Creator"/>
+    <entry key="name" type="xstring" value="Punctuation Erasure"/>
     <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
@@ -54,12 +48,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 10443, Cols: 3"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 1000, Cols: 4"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
-        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="477748ca-99bf-4199-8de6-103444d9faa0"/>
+        <entry key="file_store_location" type="xstring" value="filestore"/>
+        <entry key="file_store_id" type="xstring" value="44b59914-1fd5-4105-b135-2de215421b70"/>
     </config>
 </config>
