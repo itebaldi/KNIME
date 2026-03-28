@@ -6,9 +6,12 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="target" type="xstring" isnull="true" value=""/>
+        <entry key="target" type="xstring" value="sentiment"/>
         <config key="targetReferenceCategory">
-            <entry key="datacell" type="xstring" isnull="true" value=""/>
+            <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+            <config key="org.knime.core.data.def.StringCell">
+                <entry key="StringCell" type="xstring" value="negative"/>
+            </config>
         </config>
         <entry key="useOrderFromTargetDomain" type="xboolean" value="false"/>
         <entry key="solver" type="xstring" value="SAG"/>
@@ -49,7 +52,7 @@
     <entry key="state" type="xstring" value="EXECUTED"/>
     <config key="nodecontainer_message">
         <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="Columns &quot;stupid&quot;, &quot;reason&quot;, &quot;lordy&quot;, &quot;exceeding&quot;, &quot;wagyu&quot;,  ... &lt;361 more&gt; have constant values  - will be ignored during training%%00010The data contains more features than rows. In this case it is recommended to use an informative prior (other than Uniform).%%00010The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.%%00010The covariance matrix could not be calculated because the observed fisher information matrix was singular. Did you properly normalize the numerical features?"/>
+        <entry key="message" type="xstring" value="Columns &quot;patti&quot;, &quot;fare&quot;, &quot;gluten&quot;, &quot;parent&quot;, &quot;extens&quot;,  ... &lt;317 more&gt; have constant values  - will be ignored during training%%00010The data contains more features than rows. In this case it is recommended to use an informative prior (other than Uniform).%%00010The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.%%00010The covariance matrix could not be calculated because the observed fisher information matrix was singular. Did you properly normalize the numerical features?"/>
     </config>
     <entry key="factory" type="xstring" value="org.knime.base.node.mine.regression.logistic.learner4.LogRegLearnerNodeFactory4"/>
     <entry key="node-name" type="xstring" value="Logistic Regression Learner"/>
@@ -79,7 +82,7 @@
             <entry key="index" type="xint" value="2"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 1467, Cols: 6"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 1386, Cols: 6"/>
             <entry key="port_dir_location" type="xstring" value="port_2"/>
         </config>
         <config key="port_3">
@@ -92,6 +95,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="2b00e469-0d25-41ff-9ee4-c9a7821389d6"/>
+        <entry key="file_store_id" type="xstring" value="fac171f9-89d0-4e2f-9599-a4489aed5dc0"/>
     </config>
 </config>
